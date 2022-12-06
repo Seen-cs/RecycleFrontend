@@ -1,0 +1,230 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff; }
+  
+  textarea.form-control {
+    height: auto; }
+  
+  .form-group {
+    margin-bottom: 1rem; }
+
+  body {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: gray;
+    position: relative;
+    z-index: 0;
+    padding: 0; }
+    body:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background: #000;
+      opacity: .3;
+      z-index: -1; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #fbceb5; }
+    a:hover, a:focus {
+      text-decoration: none !important;
+      outline: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  
+  h1, h2, h3, h4, h5,
+  .h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Lato", Arial, sans-serif;
+    color: #000; }
+  
+  .bg-primary {
+    background: #fbceb5 !important; }
+  
+  .ftco-section {
+    padding: 7em 0; }
+  
+  .ftco-no-pt {
+    padding-top: 0; }
+  
+  .ftco-no-pb {
+    padding-bottom: 0; }
+  
+  .heading-section {
+    font-size: 28px;
+    color: #fff; }
+  
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  
+  .login-wrap {
+    position: relative;
+    color: rgba(0, 0, 0, 0.9); }
+    .login-wrap h3 {
+      font-weight: 300;
+      color: rgb(0, 0, 0); }
+    .login-wrap .social {
+      width: 100%; }
+      .login-wrap .social a {
+        width: 100%;
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        color: #000;
+        background: rgb(0, 0, 0); }
+        .login-wrap .social a:hover {
+          background: #000;
+          color: rgb(0, 0, 0);
+          border-color: #000; }
+  
+  .form-group {
+    position: relative; }
+  
+  .field-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.9); }
+  
+  .form-control {
+    background: transparent;
+    border: none;
+    height: 50px;
+    color: black !important;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .form-control {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+    .form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: rgba(0, 0, 0, 0.8) !important; }
+    .form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      color: rgba(0, 0, 0, 0.8) !important; }
+    .form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      color: rgba(0, 0, 0, 0.8) !important; }
+    .form-control:-moz-placeholder {
+      /* Firefox 18- */
+      color: rgba(0, 0, 0, 0.8) !important; }
+    .form-control:hover, .form-control:focus {
+      background: transparent;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: rgba(255, 255, 255, 0.4); }
+    .form-control:focus {
+      border-color: rgba(255, 255, 255, 0.4); }
+  
+  textarea.form-control {
+    height: inherit !important; }
+  
+  .checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    margin-top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .checkmark:after {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+  
+  
+  /* Style the checkmark/indicator */
+  .checkbox-primary {
+    color: #fbceb5; }
+    .checkbox-primary input:checked ~ .checkmark:after {
+      color: #fbceb5; }
+  
+  .btn {
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    font-size: 15px;
+    text-transform: uppercase; }
+    .btn:hover, .btn:active, .btn:focus {
+      outline: none; }
+    .btn.btn-primary {
+      background: #000000 !important;
+      border: 1px solid white !important;
+      color: rgb(255, 255, 255) !important; }
+      .btn.btn-primary:hover {
+        border: 1px solid #fbceb5;
+        background: transparent;
+        color: #fbceb5; }
+      .btn.btn-primary.btn-outline-primary {
+        border: 1px solid #fbceb5;
+        background: transparent;
+        color: #fbceb5; }
+        .btn.btn-primary.btn-outline-primary:hover {
+          border: 1px solid transparent;
+          background: #fbceb5;
+          color: #fff; }
+  

@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+
+  ul {
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+li
+{
+    float: left;
+    padding-left: 3px;
+}
+.coinStream
+{
+    color: white;
+    z-index: 999;
+    position: relative;
+    margin-bottom: -40px;
+    background-color: transparent;
+}

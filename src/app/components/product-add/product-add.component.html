@@ -1,0 +1,68 @@
+<div class="col-lg-4 templatemo-item-col all soon" >
+    <div class="meeting-item">
+      <div class="thumb">
+        <img src="assets/images/meeting-01.jpg" alt="">
+      </div>
+      <div class="down-content">
+        <label for="Kategori Adı">Kategori Seçin:</label>
+        <!-- <select class="form-control" id="sel1" >
+          <option disabled>Kategori Adı Seçin</option>
+          <option (change)="setCurrentCategory(category.categoryName)" type="text" *ngFor="let category of categories">{{category.categoryName}}</option>
+        </select> -->
+        <!-- <ul>
+          <li (click)="setCurrentCategory(category.categoryName)" *ngFor="let category of categories">{{category.categoryName}}</li>
+        </ul> -->
+        <!-- <div class="grid text-center">
+          <div  class="row" >
+            <div (click)="setCurrentCategory(category.categoryName)" *ngFor="let category of categories" class="col">
+              {{category.categoryName}}
+            </div>
+          </div>
+        </div> -->
+        
+        
+        
+        <div>
+          <table class="table" style="display: block; width:100%;">
+            
+            <tbody class="table" style="overflow-y: scroll; height: 200px; display: block; ">
+              <tr  *ngFor="let category of categories">
+                
+                <td >{{category.categoryName}}</td>          
+                <td ><button [class] = "getCurrentCategoryClass(category)" (click)="setCurrentCategory(category)" class="btn btn-outline-secondary"  type="button" >Seç</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <form [formGroup]="productAddForm">
+          <div class="mb-3">
+              <label for="productName" >Ürün Adı</label>
+              <div class="form-group">
+                  <input type="text" 
+                  id="productName"
+                  formControlName="productName" class="form-control"
+                  placeholder="Ürün adı"/>
+              </div>
+          </div>  
+          <div class="mb-3">
+              <label for="unitPrice">Ürün Fiyatı</label>
+              <div class="form-group">
+                  <input type="number"
+                  id="unitPrice"
+                  formControlName="unitPrice" class="form-control"
+                  placeholder="Ürün Fiyatı"/>
+              </div>
+          </div>   
+
+      </form>
+      <div class="card-footer">
+                <button class="btn btn-outline-success"  (click)="add()">Ekle</button>
+            </div>
+    </div>
+  </div>
+
+
+    
+

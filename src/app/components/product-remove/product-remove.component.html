@@ -1,0 +1,44 @@
+<div class="col-lg-4 templatemo-item-col all soon">
+    <div class="meeting-item" id = "row-grid">
+      <div class="thumb">
+        <img src="assets/images/meeting-01.jpg" alt="">
+      </div>
+      <div class="down-content">
+        
+        <!-- <select class="form-control" id="sel1" >
+          <option disabled>  Kategori Adı Seçin</option>
+          
+          
+          <option type="text" *ngFor="let product of products">{{product.productName}}</option>
+        </select>  -->
+<!-- 
+         <div class="grid text-center">
+          <div  class="row" >
+            <div (click)="setCurrentProduct(product)" *ngFor="let product of products" class="col">
+              {{product.productName}}
+            </div>
+          </div>
+        </div> -->
+        <label for="Kategori Adı">Ürün Seçin:</label>
+        <div>
+          <table class="table" style="display: block; width:100%;">
+            <div class="mb-3">
+              <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama ifadesi girin">
+            </div>
+            <tbody class="table" style="overflow-y: scroll; height: 200px; display: block; ">
+              <tr *ngFor="let product of products|filterPipe:filterText">
+
+                <td >{{product.productName}}</td>          
+                <td ><button [class] = "getCurrentProductClass(product)" (click)="setCurrentProduct(product)" class="btn btn-outline-secondary"  type="button" >Seç</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button (click)="remove()" class="btn btn-outline-danger" type="button" id="button-addon2">Ürünü Sil</button>
+
+          
+
+      </div>
+    </div>
+</div>

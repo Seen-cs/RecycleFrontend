@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.meeting-item {
+  width: 450px;
+  margin-left: 25px;
+}
+
+.meeting-item .thumb {
+  position: relative;
+}
+
+.meeting-item .thumb img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.meeting-item .down-content {
+  background-color: #fff;
+  padding: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+section.meetings-page
+{
+  background-image: url(../../../assets/images/admin-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 190px;
+  padding-bottom: 0px;
+}
+.meeting-item
+{
+  padding-bottom: 25px;
+  width: 350px;
+  text-align: center;
+  color: black;
+}
+
+
+
+

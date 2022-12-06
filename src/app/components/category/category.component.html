@@ -1,0 +1,24 @@
+<section class="meetings-page" id="meetings">
+  <div class="container" >
+    <div class="row">
+      <div class="col-lg-12">
+<div class="col-lg-12">
+  <div class="filters">
+    <ul>
+      <nav class="navbar" style="background-color: rgba(250, 250, 250, 0.5); border-radius: 9px;">
+        <div class="container-fluid">
+          <div [class]="getAllCategoryClass()"  routerLink="/urunler" >Tüm Kategoriler</div>
+          <div [class] = "getCurrentCategoryClass(category)" style="cursor: pointer;" (click)="setCurrentCategory(category)" routerLink = "/products/category/{{category.categoryID}}"
+          *ngFor="let category of categories" 
+           >{{category.categoryName}} 
+          </div>
+        
+        </div>
+      </nav>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>

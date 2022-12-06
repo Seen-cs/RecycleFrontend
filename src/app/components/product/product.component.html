@@ -1,0 +1,35 @@
+
+
+<section class="meetings-page" id="meetings">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-12">            
+            <div class="col-lg-12" style="margin-top: 200px;">
+              <div class="row grid">
+                <app-category ></app-category>
+                <!-- <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Ürün Ara</label>
+                  <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama ifadesi girin">
+                </div> -->
+                <div *ngFor="let product of products |filterPipe:filterText" class="col-lg-4 templatemo-item-col all soon" style="margin-top: 20px ;">
+                  <div class="meeting-item">
+                    <div class="thumb">
+                      <div class="price">
+                        <span>{{product.unitPrice |convertCarbonPrice}} Carbon</span>
+                      </div>
+                      <img src="assets/images/meeting-01.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                      <h4>{{product.productName}}</h4>
+                      <div  class="input-group mb-3">
+                        <input [(ngModel)]="quantity" type="number" id="quantity" type="text" class="form-control" placeholder="Lütfen Miktar'ı Giriniz." aria-label="Lütfen Miktar'ı Giriniz." aria-describedby="button-addon2">
+                        <button class="btn btn-outline-success" type="button" id="button-addon2" (click)="addToRecycleCart(product,quantity)">Sepete Ekle</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
