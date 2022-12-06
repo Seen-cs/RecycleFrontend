@@ -22,6 +22,7 @@ import { WalletComponent } from './components/wallet/wallet.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ConvertCarbonPricePipe } from './pipes/convert-carbon-price.pipe';
 import { DenemeComponent } from './components/deneme/deneme.component';
+import { AdminRegisterComponent } from './components/admin-register/admin-register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { DenemeComponent } from './components/deneme/deneme.component';
     ContactComponent,
     ConvertCarbonPricePipe,
     DenemeComponent,
+    AdminRegisterComponent,
   ],
   imports: [
     BrowserModule,

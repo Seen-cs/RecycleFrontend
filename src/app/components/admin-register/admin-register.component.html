@@ -1,0 +1,75 @@
+<div class="col-lg-4 templatemo-item-col all soon" >
+    <div class="meeting-item">
+      <div class="thumb">
+        <img src="assets/images/meeting-01.jpg" alt="">
+      </div>
+      <div class="down-content">
+
+        <form [formGroup]="adminRegisterForm">
+            <div class="mb-3">
+                <label for="email" >Email</label>
+                <div class="form-group">
+                    <input type="text" 
+                    id="email"
+                    formControlName="email" class="form-control"
+                    placeholder="Email"/>
+                </div>
+            </div>  
+            <div class="mb-3">
+                <label for="password">Parola</label>
+                <div class="form-group">
+                    <input type="password"
+                    id="password"
+                    formControlName="password" class="form-control"
+                    placeholder="Parola"/>
+                </div>
+            </div>   
+
+          <div class="mb-3">
+            <label for="firstName" >Ad</label>
+            <div class="form-group">
+                <input type="firstName" 
+                id="firstName"
+                formControlName="firstName" class="form-control"
+                placeholder="Ad"/>
+            </div>
+        </div>  
+        <div class="mb-3">
+          <label for="lastName" >Soyad</label>
+          <div class="form-group">
+              <input type="text" 
+              id="lastName"
+              formControlName="lastName" class="form-control"
+              placeholder="Soyad"/>
+          </div>
+      </div>  
+      <div class="mb-3">
+        <label for="nationalityId" >Tc no</label>
+        <div class="form-group">
+            <input type="text" 
+            id="nationalityId"
+            formControlName="nationalityId" class="form-control"
+            placeholder="Tc no"/>
+        </div>
+    </div>  
+    <div class="mb-3">
+      <label for="dateOfBirth" >Doğum Yılı</label>
+      <div class="form-group">
+          <input type="number" 
+          id="dateOfBirth"
+          formControlName="dateOfBirth" class="form-control"
+          placeholder="Doğum Yılı"/>
+      </div>
+  </div>
+  
+        </form>
+
+      <div class="card-footer">
+                <button (click)="add()" class="btn btn-outline-success" >Ekle</button>
+            </div>
+    </div>
+  </div>
+
+
+    
+
