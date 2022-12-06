@@ -1,4 +1,14 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<button (click)="startStream()">Start Stream</button>
+<button (click)="stopStream()">Stop Stream</button>
 
-<td>
-    <tr *ngFor="let nuro of nuros |async">{{nuro.city}}</tr>
-</td>
+<div>
+  Messages:
+  <ul>
+    <li *ngFor="let message of messages">{{message}}</li>
+  </ul>
+</div>

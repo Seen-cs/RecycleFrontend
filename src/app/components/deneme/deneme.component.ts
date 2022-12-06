@@ -1,4 +1,5 @@
 import { NodeService } from 'src/app/services/node.service';
+import { GrpcService } from './../../services/grpc.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deneme.component.css']
 })
 export class DenemeComponent implements OnInit {
-  nuros;
-  constructor(private nodeService:NodeService) { }
+  messages: string[] = [];
+
+  constructor(private GrpcService:GrpcService) { }
 
   ngOnInit(): void {
-    this.nuros=this.nodeService.getCities();
+    this.messages=this.GrpcService.messages;
+  }
+  startStream(){
+    this.GrpcService.startStream();
+  }
+  stopStream(){
+    this.GrpcService.stopStream();
   }
 
 }
