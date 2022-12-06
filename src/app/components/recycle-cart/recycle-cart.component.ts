@@ -10,13 +10,14 @@ import { CartService } from 'src/app/services/cart.service';
   styleUrls: ['./recycle-cart.component.css']
 })
 export class RecycleCartComponent implements OnInit {
-
+  totalPrice:number=0;
   cartItems:CartItem[]=[];
   constructor(private cartService:CartService,
     private toastrService:ToastrService) { }
 
   ngOnInit(): void {
     this.getCart();
+    this.calculateTotalPrice();
   }
   getCart(){
     this.cartItems=this.cartService.list();
@@ -25,5 +26,9 @@ export class RecycleCartComponent implements OnInit {
     this.cartService.removeFromCart(product);
     this.toastrService.error(product.productName+"Sepetten silindi")
   }
-
+  calculateTotalPrice(){
+    this.cartItems.forEach(cartItem => {
+      this.totalPrice = Number(this.totalPrice)+Number(cartItem.price)
+    });
+  }
 }

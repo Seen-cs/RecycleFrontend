@@ -60,6 +60,7 @@ export class ProductRemoveComponent implements OnInit {
        let productModel = Object.assign({},this.productRemoveForm.value)
        this.productService.remove(productModel).subscribe(response=>{
          this.toastrService.success(response.message,"Başarılı")
+         setTimeout(() => window.location.reload(), 700)
        },responseError=>{
          if(responseError.error.Errors.length>0){
            for (let i = 0; i <responseError.error.Errors.length; i++) {

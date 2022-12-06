@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RcttokenService {
+export class RctService {
   apiUrl="https://localhost:44347/api/"
   constructor(private httpClient:HttpClient) { }
 
-
-  getBalance(walletAdrress:String):Observable<String>{
-    return this.httpClient.post<String>(this.apiUrl+"products/add",walletAdrress)
+  getBalance(walletAdrress:string){
+    return this.httpClient.post<String>(this.apiUrl+"rct/balance?balance="+walletAdrress,walletAdrress)
   }
 }
