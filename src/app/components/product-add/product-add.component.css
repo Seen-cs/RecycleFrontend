@@ -27,7 +27,6 @@ img {
 }
 section.meetings-page
 {
-  background-image: url(../../../assets/images/admin-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;

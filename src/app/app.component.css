@@ -1,4 +1,5 @@
 div{
     background-image: url(../assets/images/Products-bg.jpg);
     background-size:contain;
+    background-repeat: no-repeat;
 }

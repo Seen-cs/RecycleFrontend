@@ -23,68 +23,69 @@
   
 </section>
 
-<section class="apply-now" id="apply">
-  <div class="container">
-    <div class="row">
-      <div class="section-heading">
-        <h2>Karbon Ayak İzimiz</h2>
-      </div>
-      <div class="col-lg-12">
-        <table class="table table-success table-striped">
-          <thead>
-            <tr>
-              <th scope="col" colspan="4" style="text-align: center;">Dünya Sıralamasında Biz</th>
-            </tr>
-          </thead>
-          <thead>
-            <tr>
-              <th>Şehir</th>
-              <th>Nüfus</th>
-              <th>Ortalama Kişi Başı CO2 Salınımı (Ton)</th>
-              <th>Dünya Sıralaması</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let city of cities|async">
-              <td>{{city.city}}</td>
-              <td>{{city.population}}</td>
-              <td>{{city.averagePerPerson}}</td>
-              <td>{{city.worldRanking}}</td>
-  
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-lg-12">
-        <table class="table table-success table-striped">
-          <thead>
-            <tr>
-              <th scope="col" colspan="4" style="text-align: center;">Bazı Ürünlerin CO2 İzi</th>
-            </tr>
-          </thead>
-          <thead>
-            <tr>
-              <th>Kategori</th>
-              <th>CO2 Salınımı</th>
-            </tr>
-          </thead>
 
-          <tbody>
-            <tr *ngFor="let product of products|async">
-              <td>{{product.Category}}</td>
-              <td>{{product.Quantity}}</td>
-             
-            </tr>
-          </tbody>
-
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="contact-us" id="contact">
 <div class="container" style="padding-left: 50px;">
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <h2>Karbon Ayak İzimiz</h2>
+        </div>
+        <div class="col-lg-12">
+          <table class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th scope="col" colspan="4" style="text-align: center;">Dünya Sıralamasında Biz</th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th>Şehir</th>
+                <th>Nüfus</th>
+                <th>Ortalama Kişi Başı CO2 Salınımı (Ton)</th>
+                <th>Dünya Sıralaması</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let city of cities|async">
+                <td>{{city.city}}</td>
+                <td>{{city.population}}</td>
+                <td>{{city.averagePerPerson}}</td>
+                <td>{{city.worldRanking}}</td>
+    
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-12">
+          <table class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th scope="col" colspan="4" style="text-align: center;">Bazı Ürünlerin CO2 İzi</th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th>Kategori</th>
+                <th>CO2 Salınımı</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr *ngFor="let product of products|async">
+                <td>{{product.Category}}</td>
+                <td>{{product.Quantity}}</td>
+               
+              </tr>
+            </tbody>
+  
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="row">
     <div class="col-lg-9 align-self-center">
       <div class="row">
@@ -137,7 +138,7 @@
           </li>
           <li>
             <h6>Adres</h6>
-            <span>Acarlar Mah. Åehit Ali Karakuzu Sk. No:10 Turgutlu/MANİSA.</span>
+            <span>Acarlar Mah. Şehit Ali Karakuzu Sk. No:10 Turgutlu/MANİSA.</span>
           </li>
           <li>
             <h6>Website URL</h6>

@@ -1,3 +1,4 @@
 <div class="footer">
-    <p>Copyright © 2022 Seen Companies. Tüm Hakları Saklıdır.</p>
+    <p (click)="startStream()">Copyright © 2022 Seen Companies. Tüm Hakları Saklıdır.</p>
+    <p (click)="stopStream()" *ngFor="let message of messages">{{message}}</p>
   </div>

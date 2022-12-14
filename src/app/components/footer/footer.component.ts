@@ -1,3 +1,4 @@
+import { GrpcService } from './../../services/grpc.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  messages: string[] = [];
+
+  constructor(private GrpcService:GrpcService) { }
 
   ngOnInit(): void {
+    this.messages=this.GrpcService.messages;
   }
-
+  startStream(){
+    this.GrpcService.startStream();
+  }
+  stopStream(){
+    this.GrpcService.stopStream();
+  }
 }
