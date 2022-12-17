@@ -7,10 +7,6 @@
             <div class="col-lg-12" style="margin-top: 200px;">
               <div class="row grid">
                 <app-category ></app-category>
-                <!-- <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Ürün Ara</label>
-                  <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="arama ifadesi girin">
-                </div> -->
                 <div *ngFor="let product of products |filterPipe:filterText" class="col-lg-4 templatemo-item-col all soon" style="margin-top: 20px ;">
                   <div class="meeting-item">
                     <div class="thumb">

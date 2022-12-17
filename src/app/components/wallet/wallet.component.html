@@ -7,17 +7,53 @@
             <div class="col-lg-12">
               
                     <div id="contact">
-                        <label for="name">Cuzdan Adresi: </label>
+                     
                         <input placeholder="Cüzdan Adresin" id="name" type="text" [formControl]="walletAdrress">
                         <button (click)="getBalance()" type="submit" id="form-submit" class="button">Bakiye Sorgula</button>
                         <h4 style="position: relative; margin-left: 250px;">{{balance}}</h4>
                     </div>
                     <h2></h2>
-              <form id="contact" action="" method="post">
-                    <input  type="text" id="toWalletAddres" placeholder="Alıcı Adres">
-                    <input  type="text" id="Amount" placeholder="Tutar" style="width: 200px;">&nbsp;&nbsp;&nbsp;
-                    <button type="submit" id="form-submit" class="button">Gönder</button>
-              </form>
+                    <form id="contact" [formGroup]="transferForm">
+                      <div class="mb-3">
+                         
+                          <div class="form-group">
+                              <input type="text" 
+                              id="privateKey"
+                              formControlName="privateKey" class="form-control"
+                              placeholder="Private Key"/>
+                          </div>
+                      </div>  
+                      <div class="mb-3">
+                        
+                        <div class="form-group">
+                            <input type="text" 
+                            id="sender"
+                            formControlName="sender" class="form-control"
+                            placeholder="Gönderici Adresi"/>
+                        </div>
+                    </div>  
+                    <div class="mb-3">
+                     
+                      <div class="form-group">
+                          <input type="text" 
+                          id="receiverAddress"
+                          formControlName="receiverAddress" class="form-control"
+                          placeholder="Alıcı Adres"/>
+                      </div>
+                  </div>  
+                      <div class="mb-3">    
+                          <div class="form-group">
+                              <input type="text"
+                              id="amount"
+                              formControlName="amount" class="form-control"
+                              placeholder="Tutar"/>
+                          </div>
+                      </div>   
+                      <button (click)="userTransfer()" type="submit" id="form-submit" class="button">Gönder</button>
+                  </form>
+
+
+
             </div>
           </div>
         </div>

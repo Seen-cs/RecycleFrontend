@@ -39,10 +39,22 @@
               <h5  style="float: right; position: relative;">{{totalPrice}} RCT</h5>
               <br>
               <br>
-              <input type="text" class="form-control" placeholder="Lütfen Ödeme Yapılalcak Cüzdan Adresini Girin." style="width: 500px; float: right;" >
+
+              <form  [formGroup]="transferForm">
+              
+                <div class="form-group">
+                  <input type="text"
+                  id="receiverAddress"
+                  formControlName="receiverAddress" class="form-control"
+                  placeholder="Gönderilecek Addres"/>
+              </div>  
+               <button (click)="adminTransfer()" class="btn btn-outline-success" type="button" style="float: right;">Ödeme Talebinde Bulun</button> 
+            </form>
+
+              <!-- <input type="text" class="form-control" placeholder="Lütfen Ödeme Yapılalcak Cüzdan Adresini Girin." style="width: 500px; float: right;" >
               <br>
               <br>
-              <button  class="btn btn-outline-success" type="button" style="float: right;">Ödeme Talebinde Bulun</button>
+              <button  class="btn btn-outline-success" type="button" style="float: right;">Ödeme Talebinde Bulun</button> -->
             </div>
           </div>
         </div>
