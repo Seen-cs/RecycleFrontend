@@ -1,27 +1,22 @@
-# RecycleFrontend
+# RecycleProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
+RecycleProject acik kaynak kodlu bir geri donusum projesidir. Dogayi korumak, geri donusumu desteklemek için gelistirilmistir.
 
-## Development server
+## Kapsam
+Geri donusum urunlerini sistemimize vererek karsiligi kadar RCT (Recycle token) kazanabilirsiniz. Bu sayede hem bir kazanc elde edecek hem de geri donusume katkida bulunacaksiniz. Sahip oldugunuz RCT'leri sistemimiz üzerinden goruntuleyebilir, istediginiz kisiye gönderebilirsiniz. Dilerseniz baska cuzdanlar uzerinden de bakiyenizi goruntuleyebilirsinz.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Gelistirme Ortamları ve Kullanılan Teknolojiler
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+RecycleProject Asp.net Web API, Angular, Node.js, Html, Css, Bootstrap, Rest Api, Soap, gRPC, Entity Framework kullanilarak gelistirlmistir.
 
-## Build
+## Nasıl Kurulur?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+RecycleProject 3 projeden olusur temel islevleri yerine getirmek icin https://github.com/Seen-cs/RecycleProject indirin token islemleri icin https://github.com/Seen-cs/RecycleTokenTransfer indirin arayuzu goruntulemek icin https://github.com/Seen-cs/RecycleFrontend indirin.
 
-## Running unit tests
+## Katkida Bulunanlar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Samet Furkan KOPAR
+- Enes DONER
+- Ali Emre KENDIRLI
+- Neset Can SALIK
